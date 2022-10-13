@@ -1,3 +1,4 @@
+
 create a simple docker-compose.yml file with two services, namely zookeeper and kafka:
 
 version: '2'
@@ -40,3 +41,19 @@ kafka_1      | [2021-04-10 22:57:40,418] DEBUG [PartitionStateMachine controller
 kafka_1      | [2021-04-10 22:57:40,447] INFO [SocketServer brokerId=1] Started data-plane acceptor and processor(s) for endpoint : ListenerName(PLAINTEXT) (kafka.network.SocketServer)
 kafka_1      | [2021-04-10 22:57:40,448] INFO [SocketServer brokerId=1] Started socket server acceptors and processors (kafka.network.SocketServer)
 kafka_1      | [2021-04-10 22:57:40,458] INFO [KafkaServer id=1] started (kafka.server.KafkaServer)
+
+https://www.baeldung.com/ops/kafka-docker-setup
+
+//This command is used to show all the running and exited containers
+docker ps -a
+
+//This command is used to access the running container
+docker exec -it <container id> bash
+
+//to list all docker images
+docker images
+
+//to run a particular image
+docker run -d -p 8000:8000  a692873757c0
+
+
