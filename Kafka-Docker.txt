@@ -66,4 +66,5 @@ This command is used to pull images from the docker repository(hub.docker.com)
 //docker build <path to docker file>
 This command is used to build an image from a specified docker file
 
-//To
+//To go inside image container after running the image using it's id 
+docker run -i -t a692873757c0 /bin/bash
