@@ -47,6 +47,9 @@ https://www.baeldung.com/ops/kafka-docker-setup
 //This command is used to show all the running and exited containers
 docker ps -a
 
+//command to see only runnign containers
+docker ps
+
 //This command is used to access the running container
 docker exec -it <container id> bash
 
@@ -60,5 +63,7 @@ docker run -d -p 8000:8000  a692873757c0
 //docker pull <image name>
 This command is used to pull images from the docker repository(hub.docker.com)
 
+//docker build <path to docker file>
+This command is used to build an image from a specified docker file
 
-
+//To
