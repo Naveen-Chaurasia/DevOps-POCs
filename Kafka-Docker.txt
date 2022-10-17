@@ -73,6 +73,21 @@ cd /bin/
 ls
 
 
+
+PS C:\Users\navee> docker run -i -t confluentinc/cp-kafka:7.0.1 /bin/bash
+[appuser@1f13820fa6e0 ~]$ dir
+[appuser@1f13820fa6e0 ~]$ cd ..
+[appuser@1f13820fa6e0 home]$ dir
+appuser
+[appuser@1f13820fa6e0 home]$ cd ..
+[appuser@1f13820fa6e0 /]$ dir
+bin  boot  dev  etc  home  lib  lib64  licenses  lost+found  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+
+docker stop sharp_goldberg
+
+docker rm sharp_goldberg
+
+
 ****************************
 1)Make a file with docker-compose.yml
 version: '3'
@@ -108,3 +123,6 @@ services:
 
 4)docker-compose ps
 
+5)docker run -i -t confluentinc/cp-kafka:7.0.1 /bin/bash
+
+6)cd /bin
