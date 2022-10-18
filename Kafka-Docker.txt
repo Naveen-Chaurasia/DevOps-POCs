@@ -123,14 +123,19 @@ services:
 
 4)docker-compose ps
 
-5)docker run -i -t confluentinc/cp-kafka:7.0.1 /bin/bash
+5) docker exec 813e23dded95 kafka-topics --bootstrap-server localhost:9092 --create --topic orders --partitions 1 --replication-factor 1
 
-6)cd /bin
+PS D:\Devopse> docker exec 813e23dded95 kafka-topics --bootstrap-server localhost:9092 --create --topic taxizone-topic --partitions 1 --replication-factor 1
+Created topic taxizone-topic.
 
-7) docker exec 813e23dded95 kafka-topics --bootstrap-server localhost:9092 --create --topic orders --partitions 1 --replication-factor 1
+6)docker exec -it 813e23dded95 kafka-console-producer --bootstrap-server localhost:9092 --topic taxizone-topic
 
-PS C:\Users\navee> docker exec 813e23dded95 kafka-topics --bootstrap-server localhost:9092 --create --topic orders --partitions 1 --replication-factor 1
-Created topic orders.
+PS D:\Devopse> docker exec -it 813e23dded95 kafka-console-producer --bootstrap-server localhost:9092 --topic taxizone-topic
+>
 
+7) docker exec -it 813e23dded95 kafka-console-consumer --bootstrap-server localhost:9092 --topic taxizone-topic --from-beginning
 
+PS D:\Devopse> docker exec -it 813e23dded95 kafka-console-consumer --bootstrap-server localhost:9092 --topic taxizone-topic --from-beginning
+hi Naveen
+how are you
 
