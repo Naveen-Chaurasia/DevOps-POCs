@@ -126,3 +126,11 @@ services:
 5)docker run -i -t confluentinc/cp-kafka:7.0.1 /bin/bash
 
 6)cd /bin
+
+7) docker exec 813e23dded95 kafka-topics --bootstrap-server localhost:9092 --create --topic orders --partitions 1 --replication-factor 1
+
+PS C:\Users\navee> docker exec 813e23dded95 kafka-topics --bootstrap-server localhost:9092 --create --topic orders --partitions 1 --replication-factor 1
+Created topic orders.
+
+
+
