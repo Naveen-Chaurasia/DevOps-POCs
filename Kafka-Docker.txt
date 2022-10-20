@@ -131,7 +131,8 @@ Created topic taxizone-topic.
 6)docker exec -it 813e23dded95 kafka-console-producer --bootstrap-server localhost:9092 --topic taxizone-topic
 
 PS D:\Devopse> docker exec -it 813e23dded95 kafka-console-producer --bootstrap-server localhost:9092 --topic taxizone-topic
->
+>hi Naveen
+how are you
 
 7) docker exec -it 813e23dded95 kafka-console-consumer --bootstrap-server localhost:9092 --topic taxizone-topic --from-beginning
 
