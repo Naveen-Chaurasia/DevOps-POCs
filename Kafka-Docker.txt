@@ -72,6 +72,12 @@ docker run -i -t confluentinc/cp-kafka:7.0.1 /bin/bash
 cd /bin/
 ls
 
+//To Stop the container
+This command kills the container by stopping its execution immediately. The difference between ‘docker kill’ and ‘docker stop’ is that 
+‘docker stop’ gives the container time to shutdown gracefully, in situations when it is taking too much time for getting the container to stop, one can opt to kill it
+
+docker stop <container id>
+docker kill image <container id>
 
 
 PS C:\Users\navee> docker run -i -t confluentinc/cp-kafka:7.0.1 /bin/bash
