@@ -1,0 +1,13 @@
+Kubectl is the command line utility to interact with Kubernetes API. It is an interface which is used to communicate and manage pods in Kubernetes cluster.
+One needs to set up kubectl to local in order to interact with Kubernetes cluster.
+
+kubectl cluster-info
+kubectl version
+kubectl config view
+ubectl api-versions
+
+//List everything
+kubectl get all --all-namespaces
+
+//To verify if the kubectl is working fine or not, check if the Kubernetes client is set up correctly.
+ kubectl get nodes
