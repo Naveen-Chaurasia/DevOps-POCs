@@ -1,4 +1,26 @@
 
+Features of Kubernetes
+Following are some of the important features of Kubernetes.
+
+Continues development, integration and deployment
+
+Containerized infrastructure
+
+Application-centric management
+
+Auto-scalable infrastructure
+
+Environment consistency across development testing and production
+
+Loosely coupled infrastructure, where each component can act as a separate unit
+
+Higher density of resource utilization
+
+Predictable infrastructure which is going to be created
+
+
+
+
 create a simple docker-compose.yml file with two services, namely zookeeper and kafka:
 
 version: '2'
