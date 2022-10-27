@@ -11,3 +11,5 @@ kubectl get all --all-namespaces
 
 //To verify if the kubectl is working fine or not, check if the Kubernetes client is set up correctly.
  kubectl get nodes
+
+https://komodor.com/learn/the-ultimate-kubectl-cheat-sheet/
