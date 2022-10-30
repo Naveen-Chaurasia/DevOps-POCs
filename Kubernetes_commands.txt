@@ -1,0 +1,11 @@
+ the common configuration structure which will pull image from Docker registry and deploy in to Kubernetes container.
+apiVersion: v1
+kind: pod
+metadata:
+   name: Tesing_for_Image_pull -----------> 1
+   spec:
+      containers:
+         - name: neo4j-server ------------------------> 2
+         image: <Name of the Docker image>----------> 3
+         imagePullPolicy: Always ------------->4
+         command: ["echo", "SUCCESS"] ------------------->
