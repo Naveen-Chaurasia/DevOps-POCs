@@ -1,0 +1,24 @@
+Shallow copying-example
+
+class GFG 
+  {
+  int i,j;
+  }
+main(String[] args) 
+  {
+  // Copying
+  GFG object1 = new GFG() ; 
+  object.i = 5;
+  object.j = 6;
+  GFG object2 = object1 ;    // shallow copying object
+  }     
+	
+
+Deep copying -example
+
+GFG object1 = new GFG() ; || Creating object of GFG class
+object.i = 5;
+object.j = 6;
+GFG object2 = new GFG;    || Creating another object class
+object2.i = object1.i ;   || Deep copying 
+object2.j = object1.j ;   || Deep copying

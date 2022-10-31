@@ -1,0 +1,6 @@
+For adding our own username and password in springboot using springboot-security
+
+add this into application.properties
+
+spring.security.user.name=naveen
+spring.security.user.password=naveen
