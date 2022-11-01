@@ -4,3 +4,52 @@ add this into application.properties
 
 spring.security.user.name=naveen
 spring.security.user.password=naveen
+
+this is a bad practise
+
+for this purpose we use SpringSecurity separate class for assigning more users,passwords and roles according to our requiremnet
+
+@EnableWebSecurity
+public class CustomSecurityConfig extends WebSecuritConfigAdapter
+{
+
+@override
+configure(AuthenticationManagerBuilder auth)
+{
+auth.inmemoryAuthentication().
+withUser("user")
+.password("pass")
+.roles("USER")
+.AND()
+withUser("ADMIN")
+.password("pass")
+.roles("ADMIN")
+}
+
+for avoiding password encoding error
+
+@Bean
+public PasswordEncoder getPasswordEncoder()
+{
+return NoOpPasswordEncoder.getInstance();
+}
+
+
+}
+
+https://www.youtube.com/watch?v=DhBqC_Vy28o
+
+Global exception handling
+https://www.youtube.com/watch?v=hLlGAQ5NfTE
+
+**********************************************************
+Here's a configuration class supplying bean metadata to an IoC container:
+
+@Configuration
+@ComponentScan(basePackageClasses = Company.class)
+public class Config {
+    @Bean
+    public Address getAddress() {
+        return new Address("High Street", 1000);
+    }
+}
