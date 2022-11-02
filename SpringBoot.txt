@@ -53,3 +53,14 @@ public class Config {
         return new Address("High Street", 1000);
     }
 }
+
+
+
+Design patterns
+Factory Design pattern
+A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. In other words, subclasses are responsible to create the instance of the class.
+
+Builder Design patterns
+Builder Pattern says that "construct a complex object from simple objects using step-by-step approach"
+
+It is mostly used when object can't be created in single step like in the de-serialization of a complex object.
