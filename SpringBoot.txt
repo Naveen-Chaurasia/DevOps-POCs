@@ -64,3 +64,24 @@ Builder Design patterns
 Builder Pattern says that "construct a complex object from simple objects using step-by-step approach"
 
 It is mostly used when object can't be created in single step like in the de-serialization of a complex object.
+
+
+
+Singleton Pattern
+class Singleton
+{
+    private static Singleton obj;
+ 
+    // private constructor to force use of
+    // getInstance() to create Singleton object
+    private Singleton() {}
+ 
+    public static Singleton getInstance()
+    {
+        if (obj==null)
+            obj = new Singleton();
+        return obj;
+    }
+}
+
+https://www.geeksforgeeks.org/singleton-design-pattern/
